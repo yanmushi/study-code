@@ -8,7 +8,8 @@ import com.yanmushi.proxy.CustomAspect;
 import com.yanmushi.proxy.HelloService;
 
 /**
- * 
+ * 通过jdk静态代理的方式<br>
+ * 通过直接编码的方式，把目标类和切面类放在一起。
  * @author YanMushi
  */
 public class JDKStaticHelloServiceProxy implements HelloService {
@@ -26,5 +27,4 @@ public class JDKStaticHelloServiceProxy implements HelloService {
 		helloService.say();
 	}
 
-	
 }

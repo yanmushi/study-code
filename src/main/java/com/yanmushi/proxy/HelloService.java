@@ -5,7 +5,7 @@
 package com.yanmushi.proxy;
 
 /**
- * 
+ * 定义一个需要代理的接口信息
  * @author YanMushi
  */
 public interface HelloService {

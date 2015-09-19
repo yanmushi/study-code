@@ -5,7 +5,7 @@
 package com.yanmushi.proxy;
 
 /**
- * 
+ * 接口的目标实现
  * @author YanMushi
  */
 public class HelloServiceImpl implements HelloService {

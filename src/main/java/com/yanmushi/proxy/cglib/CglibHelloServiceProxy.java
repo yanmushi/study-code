@@ -13,7 +13,8 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
 /**
- * 
+ * 通过cglib的方式代理<br>
+ * 可以代理一个类，不要求实现接口
  * @author YanMushi
  */
 public class CglibHelloServiceProxy implements MethodInterceptor {

@@ -5,6 +5,7 @@
 package com.yanmushi.proxy;
 
 /**
+ * 切面类，提供adviceMsg方法
  * @author YanMushi
  */
 public class CustomAspect {

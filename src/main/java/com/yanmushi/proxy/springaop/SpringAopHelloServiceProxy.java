@@ -26,7 +26,8 @@ public class SpringAopHelloServiceProxy {
 		ProxyFactoryBean bean = new ProxyFactoryBean();
 		bean.setInterfaces(clz.getInterfaces());
 		bean.setTarget(target);
-//		bean.setInterceptorNames("");
+		// 文档说明，此处必须是bean，但是我没有开启spring容器
+		// bean.setInterceptorNames("");
 		return (T) bean.getObject();
 	}
 }

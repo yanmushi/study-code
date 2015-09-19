@@ -8,16 +8,19 @@ import java.lang.reflect.Method;
 
 import org.springframework.aop.MethodBeforeAdvice;
 
+import com.yanmushi.proxy.CustomAspect;
+
 /**
  * 
  * @author YanMushi
  */
 public class HelloBeforeAdvice implements MethodBeforeAdvice {
 
+	private CustomAspect customAspect = new CustomAspect();
+	
 	@Override
 	public void before(Method method, Object[] args, Object target) throws Throwable {
-		System.out.println("---------------------------");
-		System.out.println("using spring-aop");
+		customAspect.adviceMsg("spring-aop");
 	}
 
 }
